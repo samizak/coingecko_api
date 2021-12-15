@@ -1,0 +1,14 @@
+{
+  "name": "coingecko_api",
+  "version": "1.0.0",
+  "description": "An API wrapper that interracts with the Coingecko API.",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "/dist"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.24.0"
+  }
+}
