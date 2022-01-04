@@ -1,6 +1,6 @@
 import { Ping } from './ping';
 import { Get_vs_currencies, Get_price } from './simple';
-import { GetCoinList } from './coin';
+import { GetCoinList, GetCoinData } from './coins';
 
 export class coingecko {
 
@@ -18,5 +18,9 @@ export class coingecko {
 
     public static async GetCoinList (include_platform?: boolean){
         return await GetCoinList(include_platform);
+    }
+
+    public static async GetCoinData (id: string){
+        return await GetCoinData(id);
     }
 }

@@ -33,7 +33,6 @@ export async function Get_price(IDs: string, vs_currencies: string, include_mark
         .then(response => response.data)
 }
 
-
 export async function Get_vs_currencies(){
     return await axios
         .get('https://api.coingecko.com/api/v3/simple/supported_vs_currencies')
